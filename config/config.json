@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "LMR0305",
+    "database": "friendFind",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
+    "password": "LMR0305",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
