@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	text-align: center;
 	padding: 10px;
@@ -26,6 +26,7 @@ h2 {
 h3 {
 	text-align: center;
 	font-size: 35px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #location-list {
@@ -61,6 +62,9 @@ h3 {
 .match-container {
 	display: flex;
 	flex-direction: row;
+	border: solid;
+	border-width: 1px;
+	border-color: black;
 }
 
 .match-image-container {
@@ -73,7 +77,11 @@ h3 {
 }
 
 #match-info-container {
-	margin: 20px;
+	padding: 10px !important;
+	background: whitesmoke;
+	border: solid;
+	border-width: 1px;
+	color: green;
 }
 
 .checkin-status {
