@@ -7,27 +7,27 @@ var router = express.Router();
 
 
 
-router.get("/", (req, res) => {
+router.get("/api", (req, res) => {
     console.log("This is the home page for users")
     res.render("index", {})
 })
 
-router.get("/profile", (req, res) => {
+router.get("/api/profile", (req, res) => {
     console.log("This is the login page for users")
     res.render("profile", {})
 })
 
-router.get("/locations", (req, res) => {
+router.get("/api/locations", (req, res) => {
     console.log("This is the location page for users")
     res.render("locations", {})
 })
 
-router.get("/matches", (req, res) => {
+router.get("/api/matches", (req, res) => {
     console.log("This is the matches page for users")
     res.render("matches", {})
 })
 
-router.get("/messages", (req, res) => {
+router.get("/api/messages", (req, res) => {
     console.log("This is the profile page for users")
     res.render("messages", {})
 })
