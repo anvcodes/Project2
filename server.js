@@ -15,3 +15,8 @@ var user = require("./routes/user.js");
 var location = require("./routes/location.js");
 app.use("/user", user);
 app.use("/location", location);
+
+
+app.listen(PORT, function() {
+    console.log("App is listening on port " + PORT);
+});

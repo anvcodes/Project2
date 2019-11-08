@@ -2,8 +2,9 @@ var express = require("express");
 var router = express.Router();
 
 
-router.get("/api/location", (req, res) => {
-    res.send(`a get request with /user route on port ${PORT}`);
+router.get("/routes/location", (req, res) => {
+    console.log("hello world");
+    // res.send(`a get request with /user route on port ${PORT}`);
 })
 
 router.post("/api/location/post", (req, res) => {
