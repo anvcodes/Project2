@@ -1,15 +1,15 @@
-var express = require("express");
-var router = express.Router();
+// var express = require("express");
+// var router = express.Router();
 // var path = require("path");
 
-module.exports = function(app) {
+// module.exports = function(app) {
 
-app.get("/", (req, res) => {
-    console.log("This is the home page for users")
-    // res.send('index')
-})
+// app.get("/", (req, res) => {
+//     console.log("This is the home page for users")
+//     // res.send('index')
+// })
 
-};
+// };
 
 // router.get("/api/user", (req, res) => {
 //     res.send(`a get request with /user route on port ${PORT}`);
@@ -26,8 +26,5 @@ app.get("/", (req, res) => {
 // router.delete("/api/user/delete", (req, res) => {
 //     res.send(`a delete request with /user/delete route on port ${PORT}`);
 // })
-
-
-
 
 // module.exports = router;
