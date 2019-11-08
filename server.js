@@ -17,8 +17,8 @@ app.set("view engine", "handlebars");
 var user = require("./routes/user.js");
 var location = require("./routes/location.js");
 var htmlRoute = require("./routes/html/htmlRoute.js");
-app.use("/user", user);
-app.use("/location", location);
+// app.use("/user", user);
+// app.use("/location", location);
 app.use("/", htmlRoute);
 
 
