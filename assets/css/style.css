@@ -1,0 +1,63 @@
+.navbar {
+}
+
+#titlebar {
+	width: 100%;
+	text-align: center;
+	margin-top: 0 !important;
+}
+
+h1 {
+	text-align: center;
+	color: aliceblue;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-top: 0px;
+}
+
+h2 {
+	font-size: 40px;
+	color: aliceblue;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#location-list {
+	line-height: 1.5;
+	background: aliceblue;
+	margin: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	color: blue;
+}
+
+body {
+	background: lightgray;
+	position: relative;
+	min-height: 100vh;
+}
+
+#login {
+	background: aliceblue;
+	border: solid;
+	border-width: 2px;
+	border-color: white;
+	width: 500px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+
+.btn-group {
+	width: 100% !important;
+	margin-bottom: 0 !important;
+}
+
+footer {
+	bottom: 0px !important;
+	position: absolute;
+	width: 100%;
+	float: inline-block;
+}
