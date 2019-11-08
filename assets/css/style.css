@@ -16,9 +16,16 @@ h1 {
 }
 
 h2 {
-	font-size: 40px;
-	color: aliceblue;
-	font-weight: bold;
+	font-size: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-style: italic;
+}
+
+h3 {
+	text-align: center;
+	font-size: 35px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -27,14 +34,87 @@ h2 {
 	background: aliceblue;
 	margin: 20px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: blue;
+	font-size: 25px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.location-image-logos {
+	height: 70px;
+}
+
+#matches-list {
+	line-height: 1.5;
+	background: aliceblue;
+	margin: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 80%;
+	border: solid;
+	border-color: darkgray;
+	border-width: 2px;
+	display: flex;
+	flex-direction: column;
+}
+
+.match-container {
+	display: flex;
+	flex-direction: row;
+	border: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+.match-image-container {
+	height: 200px;
+}
+
+.matches-thumbnails {
+	height: 200px;
+	padding: 10px;
+}
+
+#match-info-container {
+	padding: 10px !important;
+	background: whitesmoke;
+	border: solid;
+	border-width: 1px;
+	color: green;
+}
+
+.checkin-status {
+	font-size: 20px;
+}
+
+.convo {
+	font-size: 15px;
+}
+.wrapper {
+	float: left;
 }
 
 body {
 	background: lightgray;
 	position: relative;
 	min-height: 100vh;
+}
+
+#floatimage {
+	height: 25%;
+	padding: 20px;
+	width: 25%;
+}
+
+.bio-section-heading {
+	font-size: 25px;
+}
+
+.bio-text {
+	font-size: 15px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 #login {
@@ -61,7 +141,7 @@ img.btn-img {
 
 footer {
 	bottom: 0px !important;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	float: inline-block;
 }
