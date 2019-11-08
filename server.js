@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 
 
-// user routes
+// routes
 var user = require("./routes/user.js");
 var location = require("./routes/location.js");
 app.use("/user", user);
