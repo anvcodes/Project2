@@ -16,11 +16,10 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 40px;
+	color: aliceblue;
+	font-weight: bold;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	text-align: center;
-	padding: 10px;
-	font-style: italic;
 }
 
 #location-list {
@@ -28,13 +27,8 @@ h2 {
 	background: aliceblue;
 	margin: 20px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 25px;
-	margin-left: 30px;
-	margin-right: 30px;
-}
-
-.location-image-logos {
-	height: 70px;
+	font-weight: bold;
+	color: blue;
 }
 
 body {
