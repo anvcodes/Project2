@@ -55,6 +55,10 @@ body {
 	margin-bottom: 0 !important;
 }
 
+img.btn-img {
+	width: 40px;
+}
+
 footer {
 	bottom: 0px !important;
 	position: absolute;
