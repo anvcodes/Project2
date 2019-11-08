@@ -11,10 +11,17 @@ const PORT = process.env.PORT || 3000;
 
 
 // routes
-var user = require("./routes/user.js");
-var location = require("./routes/location.js");
-app.use("/user", user);
-app.use("/location", location);
+var user = require("/routes/api-user.js");
+var location = require("/routes/api-locations.js");
+var match = require("/routes/api-matches.js");
+var match = require("/routes/locations.handlebars.js");
+var match = require("/routes/profile.handlebars.js");
+var match = require("/routes/matches.handlebars.js");
+var match = require("/routes/messages.handlebars.js");
+var match = require("/routes/login.handlebars.js");
+app.use("/api-user", api-user);
+app.use("/api-locations", api-locations);
+app.use("/api-matches", api-matches);
 
 
 app.listen(PORT, function() {
