@@ -16,10 +16,16 @@ h1 {
 }
 
 h2 {
-	font-size: 40px;
-	color: aliceblue;
-	font-weight: bold;
+	font-size: 20px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-style: italic;
+}
+
+h3 {
+	text-align: center;
+	font-size: 35px;
 }
 
 #location-list {
@@ -27,14 +33,62 @@ h2 {
 	background: aliceblue;
 	margin: 20px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: blue;
+	font-size: 25px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.location-image-logos {
+	height: 70px;
+}
+
+#matches-list {
+	line-height: 1.5;
+	background: aliceblue;
+	margin: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.convo {
+	font-size: 15px;
+}
+
+.checkin-status {
+	font-size: 20px;
+}
+
+.matches-thumbnails {
+	height: 200px;
+	padding: 10px;
+}
+
+.wrapper {
+	float: left;
 }
 
 body {
 	background: lightgray;
 	position: relative;
 	min-height: 100vh;
+}
+
+#floatimage {
+	height: 25%;
+	padding: 20px;
+	width: 25%;
+}
+
+.bio-section-heading {
+	font-size: 25px;
+}
+
+.bio-text {
+	font-size: 15px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 #login {
