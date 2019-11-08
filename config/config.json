@@ -9,7 +9,7 @@
   "test": {
     "username": "root",
     "password": "LMR0305",
-    "database": "friendFindTestDB",
+    "database": "testDB",
     "host": "localhost",
     "dialect": "mysql",
     "logging": false
