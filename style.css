@@ -23,6 +23,11 @@ h2 {
 	font-style: italic;
 }
 
+h3 {
+	text-align: center;
+	font-size: 35px;
+}
+
 #location-list {
 	line-height: 1.5;
 	background: aliceblue;
@@ -68,6 +73,22 @@ body {
 	background: lightgray;
 	position: relative;
 	min-height: 100vh;
+}
+
+#floatimage {
+	height: 25%;
+	padding: 20px;
+	width: 25%;
+}
+
+.bio-section-heading {
+	font-size: 25px;
+}
+
+.bio-text {
+	font-size: 15px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 #login {
