@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	text-align: center;
 	padding: 10px;
@@ -26,6 +26,7 @@ h2 {
 h3 {
 	text-align: center;
 	font-size: 35px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #location-list {
@@ -50,14 +51,24 @@ h3 {
 	font-size: 30px;
 	margin-left: 50px;
 	margin-right: 50px;
+	width: 80%;
+	border: solid;
+	border-color: darkgray;
+	border-width: 2px;
+	display: flex;
+	flex-direction: column;
 }
 
-.convo {
-	font-size: 15px;
+.match-container {
+	display: flex;
+	flex-direction: row;
+	border: solid;
+	border-width: 1px;
+	border-color: black;
 }
 
-.checkin-status {
-	font-size: 20px;
+.match-image-container {
+	height: 200px;
 }
 
 .matches-thumbnails {
@@ -65,6 +76,21 @@ h3 {
 	padding: 10px;
 }
 
+#match-info-container {
+	padding: 10px !important;
+	background: whitesmoke;
+	border: solid;
+	border-width: 1px;
+	color: green;
+}
+
+.checkin-status {
+	font-size: 20px;
+}
+
+.convo {
+	font-size: 15px;
+}
 .wrapper {
 	float: left;
 }
@@ -79,14 +105,6 @@ body {
 	height: 25%;
 	padding: 20px;
 	width: 25%;
-}
-
-#main-bio {
-	margin: 30px;
-}
-
-.media-body {
-	margin-right: 30px;
 }
 
 .bio-section-heading {
@@ -117,9 +135,13 @@ body {
 	margin-bottom: 0 !important;
 }
 
+img.btn-img {
+	width: 40px;
+}
+
 footer {
 	bottom: 0px !important;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	float: inline-block;
 }
