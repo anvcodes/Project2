@@ -3,7 +3,7 @@
 }
 
 body {
-	overflow: scroll;
+	overflow: auto;
 }
 
 #titlebar {
@@ -66,9 +66,9 @@ h3 {
 
 #g-map-example {
 	width: 90%;
-	margin-top: 0;
+	margin-top: 10px;
 	margin-left: 20px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	border: solid;
 	border-width: 1px;
 	border-color: grey;
@@ -85,6 +85,7 @@ h3 {
 	border-radius: 10px;
 	border-width: 1px;
 	border-color: grey;
+	overflow: auto;
 }
 
 .location-image-logos {
@@ -108,11 +109,16 @@ h3 {
 	border-width: 1px;
 	display: flex;
 	flex-direction: column;
+	overflow: auto;
 }
 
 .match-container {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 30px;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: gray;
 }
 
 .match-image-container {
@@ -122,7 +128,7 @@ h3 {
 .matches-thumbnails {
 	height: 150px;
 	padding: 10px;
-	width: 150px;
+	width: 140px;
 }
 
 #match-info-container {
@@ -203,7 +209,6 @@ h6 {
 }
 
 #bio-image {
-	height: 40%;
 	width: 85%;
 	border: solid;
 	border-width: 1px;
