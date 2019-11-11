@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Dating App</title>
+	</head>
+	<body>
+		<header>
+			<div class="pos-f-t">
+				<div class="collapse" id="navbarToggleExternalContent">
+					<div class="bg-dark p-4">
+						<h5 class="text-white h4">Collapsed content</h5>
+						<span class="text-muted">Toggleable via the navbar brand.</span>
+					</div>
+				</div>
+				<nav class="navbar navbar-dark bg-dark">
+					<div id="titlebar">
+						<h1>Dating App</h1>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div id="profile-builder">
+			<h3>Build Your Profile</h3>
+			<form>
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input
+						type="input"
+						class="form-control"
+						id="user-name"
+						aria-describedby="emailHelp"
+						placeholder="Enter Your Name"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="age">Age:</label>
+					<input type="input" class="form-control" id="user-age" placeholder="Enter Your Age" />
+				</div>
+
+				<div class="form-group">
+					<label for="region">Region:</label>
+					<input type="input" class="form-control" id="user-region" placeholder="Enter Your Region" />
+				</div>
+
+				<div class="form-group">
+					<label for="bio">Bio:</label>
+					<textarea
+						type="text-box"
+						class="form-control"
+						id="user-bio"
+						placeholder="Write a brief bio about yourself"
+						rows="5"
+					></textarea>
+				</div>
+
+				<button type="button" onclick="window.location.href = 'locations.html';" class="btn btn-primary">
+					Submit
+				</button>
+			</form>
+		</div>
+		<footer>
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<button type="button" onclick="window.location.href = 'locations.html';" class="btn btn-secondary">
+					<img class="btn-img" src="assets/images/placeholder.png" />
+				</button>
+				<button type="button" onclick="window.location.href = 'matches.html';" class="btn btn-secondary">
+					<img class="btn-img" src="assets/images/like.png" />
+				</button>
+				<button type="button" onclick="window.location.href = 'messages.html';" class="btn btn-secondary">
+					<img class="btn-img" src="assets/images/mail.png" />
+				</button>
+				<button type="button" onclick="window.location.href = 'profile.html';" class="btn btn-secondary">
+					<img class="btn-img" src="assets/images/user.png" />
+				</button>
+				<button type="button" onclick="window.location.href = 'profile.html';" class="btn btn-secondary">
+					<img class="btn-img" src="assets/images/settings.png" />
+				</button>
+			</div>
+		</footer>
+	</body>
+</html>
