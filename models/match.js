@@ -2,31 +2,15 @@ module.exports = function(sequelize, DataTypes) {
   var Match = sequelize.define("Matches", {
     accepted: {
       type: DataTypes.BOOLEAN,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      allowNull: false
     },
     matchesId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
-    },
-    UserId: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      allowNull: false
     },
     matchId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      allowNull: false
     }
   });
 

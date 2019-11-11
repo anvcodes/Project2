@@ -20,16 +20,6 @@ router.post("/location/post", (req, res) => {
     }).then(function(dbLocation){
         res.json(dbLocation);
     });
-
-    // db.Location.post({
-    //     longitude: req.body.longitude,
-    //     latitude: req.body.latitude,
-    //     city: req.body.city,
-    //     state: req.body.state,
-    //     venue: req.body.venue
-    // }).then(function(dbLocation){
-    //     res.json(dbLocation);
-    // });
 })
 
 router.put("/location/:id", (req, res) => {

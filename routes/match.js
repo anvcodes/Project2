@@ -14,7 +14,8 @@ router.post("/matches", (req, res) => {
     db.Matches.create({
         accepted: req.body.accepted,
         matchesId: req.body.matchesId,
-        UserId: req.body.UserId
+        UserId: req.body.UserId,
+        matchId: req.body.matchId
     }).then(function(dbMatches){
         res.json(dbMatches);
     });

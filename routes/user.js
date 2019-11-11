@@ -46,7 +46,7 @@ router.post("/user", (req, res) => {
 // })
 
 router.put("/user/:id", (req, res) => {
-  db.User.update({
+  db.Users.update({
     name: req.body.name,
         age: req.body.age,
         region: req.body.region
@@ -60,7 +60,7 @@ router.put("/user/:id", (req, res) => {
 })
 
 router.delete("/user/:id", (req, res) => {
-  db.User.destroy({
+  db.Users.destroy({
     name: req.body.name,
         age: req.body.age,
         region: req.body.region
