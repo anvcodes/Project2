@@ -10,6 +10,7 @@ var router = express.Router();
 router.get("/", (req, res) => {
     console.log("This is the home page for users")
     res.render("index", {})
+    // res.sendFile(path.join(__dirname, "../views/index.handlebars.html"));
 })
 
 router.get("/profile", (req, res) => {
