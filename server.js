@@ -1,25 +1,55 @@
-const express = require('express');
-const path = require('path');
-const hbs = require('express-handlebars');
+require('dotenv').config();
+var express = require('express');
+var exphbs = require('express-handlebars');
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+var db = require('./models');
 
-// require("dotenv").config();
-// var keys = require("./keys.js");
+var app = express();
+var PORT = process.env.PORT || 3000;
+
+// Middleware
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 app.use(express.static('public'));
 
-app.engine('handlebars', hbs({ defaultLayout: 'main' }));
+// Handlebars
+app.engine(
+	'handlebars',
+	exphbs({
+		defaultLayout: 'main',
+	})
+);
 app.set('view engine', 'handlebars');
 
-// routes
-var user = require('./routes/user.js');
-var location = require('./routes/location.js');
-var htmlRoute = require('./routes/html/htmlRoute.js');
-// app.use("/user", user);
-// app.use("/location", location);
-app.use('/', htmlRoute);
+// Routes
+// require("./routes/apiRoutes")(app);
+// require("./routes/htmlRoutes")(app);
 
-app.listen(PORT, function() {
-	console.log('App is listening on port ' + PORT);
+var apiRoutes = require('./routes/apiRoutes');
+app.use('/api', apiRoutes);
+
+var htmlRoutes = require('./routes/html/htmlRoute');
+app.use('/', htmlRoutes);
+
+var locationRoute = require('./routes/location');
+app.use('/api', locationRoute);
+
+var userRoute = require('./routes/user');
+app.use('/api', userRoute);
+
+var syncOptions = { force: false };
+
+// If running a test, set syncOptions.force to true
+// clearing the `testdb`
+if (process.env.NODE_ENV === 'test') {
+	syncOptions.force = true;
+}
+
+// Starting the server, syncing our models ------------------------------------/
+db.sequelize.sync(syncOptions).then(function() {
+	app.listen(PORT, function() {
+		console.log('==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.', PORT, PORT);
+	});
 });
+
+module.exports = app;
