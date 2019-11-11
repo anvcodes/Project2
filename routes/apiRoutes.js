@@ -1,24 +1,35 @@
-//var db = require("../models");
+var express = require("express");
+var router = express.Router();
+// var db = require("../models");
+// var path = require("path");
 
-// module.exports = function(app) {
-//   // Get all examples
-//   app.get("/api/examples", function(req, res) {
-//     db.Example.findAll({}).then(function(dbExamples) {
-//       res.json(dbExamples);
-//     });
-//   });
 
-//   // Create a new example
-//   app.post("/api/examples", function(req, res) {
-//     db.Example.create(req.body).then(function(dbExample) {
-//       res.json(dbExample);
-//     });
-//   });
+router.get("/api", (req, res) => {
+   
+    console.log("This is the home page for users");
+    
+});
 
-//   // Delete an example by id
-//   app.delete("/api/examples/:id", function(req, res) {
-//     db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-//       res.json(dbExample);
-//     });
-//   });
-// };
+router.get("/api/profile", (req, res) => {
+    console.log("This is the login page for users");
+    
+})
+
+router.get("/api/locations", (req, res) => {
+    console.log("This is the location page for users");
+   
+})
+
+router.get("/api/matches", (req, res) => {
+    console.log("This is the matches page for users");
+  
+})
+
+router.get("/api/messages", (req, res) => {
+    console.log("This is the profile page for users");
+    
+})
+
+
+
+module.exports = router;
