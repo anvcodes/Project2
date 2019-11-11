@@ -10,7 +10,7 @@
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 		<title>Dating App</title>
 	</head>
 	<body>
@@ -46,40 +46,67 @@
 		<hr>
 
 		<div id="matches-list">
-			<ul>
-				<li>
+				<div class="match-container">
 						<img class="matches-thumbnails" src="assets/images/girl1.jpg" alt="girl 1">
+					
+						<div class="match-info-container">
                         <a href="#">Cindy | 22 | Brooklyn</a>
                         <p class="convo">
                             Haha yeah, I like dogs. Look, you're nice and all but I think we should just be friends.
-                        </p>
+						</p>
+						<button type="button" onclick="window.location.href = '#';" class="btn btn-primary">
+								<img class="btn-img" src="assets/images/mailwrite.png" />
+						</div>
+						
+						</div>
                         
-<hr>
-				</li>
-				<li>
+
+
+		<div class="match-container">
 						<img class="matches-thumbnails" src="assets/images/girl2.jpg" alt="girl 2">
+					
+					<div class="match-info-container">
                         <a href="#">Loretta | 25 | Queens</a>
                         <p class="convo">
                             I'm just really busy these days but it was nice meeting you.
                         </p>
 						</a>
-						<hr>
-					</li>
-					<li>
+						<button type="button" onclick="window.location.href = '#';" class="btn btn-primary">
+								<img class="btn-img" src="assets/images/mailwrite.png" />
+						</div>
+						
+						</div>
+						
+						
+								<div class="match-container">
+					
 						<img class="matches-thumbnails" src="assets/images/girl3.jpg" alt="girl 3">
+								
+						<div class="match-info-container">
                         <a href="#">Marie | 28 | Lower East Side</a>
                         <p class="convo">
-                        Please stop messaging me.</p>
-                            <hr>
-						</li>
-						<li>
+						Please stop messaging me.</p>
+						<button type="button" onclick="window.location.href = '#';" class="btn btn-primary">
+								<img class="btn-img" src="assets/images/mailwrite.png" />
+						</div>
+						
+						</div>
+                            
+							
+									<div class="match-container">
 								<img class="matches-thumbnails" src="assets/images/girl4.png" alt="girl 4">
+							
+								<div class="match-info-container">
                                 <a href="#">Corinne | 29 | Upper West Side</a>
                                 <p class="convo">
-                                haha</p>
-								<hr>
-							</li>
-			</ul>
+								haha</p>
+								<button type="button" onclick="window.location.href = '#';" class="btn btn-primary">
+										<img class="btn-img" src="assets/images/mailwrite.png" />
+								</div>
+								
+								</div>
+								
+							
 		</div>
 
 		<footer>
@@ -96,6 +123,9 @@
 				<button type="button" onclick="window.location.href = 'profile.html';" class="btn btn-secondary">
 					<img class="btn-img" src="assets/images/user.png" />
 				</button>
+				<button type="button" onclick="window.location.href = 'profile.html';" class="btn btn-secondary">
+						<img class="btn-img" src="assets/images/settings.png" />
+					</button>
 			</div>
 		</footer>
 	</body>

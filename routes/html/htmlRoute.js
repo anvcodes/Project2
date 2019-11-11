@@ -1,21 +1,20 @@
 var express = require("express");
 var router = express.Router();
 
-// var path = require("path");
- 
-// module.exports = function(app) {
+var path = require("path");
 
 
 
 router.get("/", (req, res) => {
     console.log("This is the home page for users")
-    res.render("index", {})
-    // res.sendFile(path.join(__dirname, "../views/index.handlebars.html"));
+    res.render("index", {
+        name: "name"
+    })
 })
 
 router.get("/profile", (req, res) => {
     console.log("This is the login page for users")
-    res.render("profile", {})
+    res.render("profile", {});
 })
 
 router.get("/locations", (req, res) => {
