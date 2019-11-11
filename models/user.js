@@ -1,8 +1,8 @@
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define("userData", {
-    routeName: DataTypes.STRING,
+  var User = sequelize.define("users", {
     name: DataTypes.STRING,
-    age: DataTypes.INTEGER
+    age: DataTypes.INTEGER,
+    region: DataTypes.STRING
   });
   return User;
 };
