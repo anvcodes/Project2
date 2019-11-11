@@ -9,9 +9,9 @@ module.exports = function(sequelize, DataTypes) {
     // Associating Author with Posts
     // When an Author is deleted, also delete any associated Posts
     User.belongsToMany(models.User, {
-      as: "matches",
+      as: "match",
 
-      through: models.Match
+      through: models.Matches
     });
   };
   return User;

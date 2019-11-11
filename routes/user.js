@@ -5,7 +5,7 @@ var db = require("./../models/index.js");
 
 
 router.get("/user", (req, res) => {
-  db.users.findAll({})
+  db.User.findAll({})
   .then(function(dbUsers){
       res.json(dbUsers);
   });
@@ -24,7 +24,7 @@ router.get("/user", (req, res) => {
 
 
 router.post("/user", (req, res) => {
-    db.users.create({
+    db.User.create({
         name: req.body.name,
         age: req.body.age,
         region: req.body.region
@@ -46,7 +46,7 @@ router.post("/user", (req, res) => {
 // })
 
 router.put("/user/:id", (req, res) => {
-  db.users.update({
+  db.User.update({
     name: req.body.name,
         age: req.body.age,
         region: req.body.region
@@ -60,7 +60,7 @@ router.put("/user/:id", (req, res) => {
 })
 
 router.delete("/user/:id", (req, res) => {
-  db.users.destroy({
+  db.User.destroy({
     name: req.body.name,
         age: req.body.age,
         region: req.body.region

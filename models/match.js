@@ -1,7 +1,28 @@
 module.exports = function(sequelize, DataTypes) {
-  var Match = sequelize.define("Match", {
+  var Match = sequelize.define("Matches", {
     accepted: {
-      type: DataTypes.STRING,
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    matchesId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    UserId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    matchId: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
         len: [1]
@@ -15,7 +36,10 @@ module.exports = function(sequelize, DataTypes) {
     Match.belongsTo(models.User, {
       foreignKey: {
         allowNull: false
-      }
+      },
+      as: "matches",
+
+      through: models.User
     });
   };
   return Match;
