@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 
 router.get("/routes/location", (req, res) => {
-    db.Location.create({
+    db.Location.findAll({
 
     })
     .then(function(dbLocation){

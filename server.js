@@ -25,6 +25,12 @@ app.set("view engine", "handlebars");
 // require("./routes/apiRoutes")(app);
 // require("./routes/htmlRoutes")(app);
 
+var apiRoutes = require("./routes/apiRoutes");
+app.use("/api", apiRoutes);
+
+var htmlRoutes = require("./routes/html/htmlRoute");
+app.use("/", htmlRoutes);
+
 var syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true
