@@ -315,6 +315,11 @@ img.btn-img1 {
 	width: 20px;
 }
 
+#profile-builder {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 footer {
 	bottom: 0px !important;
 	position: fixed;
