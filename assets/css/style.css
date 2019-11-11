@@ -201,10 +201,11 @@ h6 {
 #bio-image {
 	width: 85%;
 	border: solid;
+	border-radius: 8px;
 	border-width: 1px;
 	border-color: grey;
 	margin-left: 20px;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 #container {
@@ -215,13 +216,14 @@ h6 {
 
 #main-bio {
 	margin-top: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 	margin-bottom: 5px;
 	background: aliceblue;
 	border: solid;
 	border-color: grey;
-	border-radius: 10px;
+	border-radius: 4px;
+	border-width: 2px;
 }
 
 .bio-header {
@@ -234,12 +236,12 @@ h6 {
 .media-body {
 	font-size: 18px;
 	margin-right: 40px;
-	margin-top: 10px;
+	margin-top: 7px;
 	margin-left: 20px;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 	background: white;
 	border: solid;
-	border-radius: 10px;
+	border-radius: 6px;
 	border-width: 1px;
 	border-color: grey;
 	min-width: 85%;
