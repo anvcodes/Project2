@@ -2,6 +2,10 @@
 	height: 55px;
 }
 
+body {
+	overflow: scroll;
+}
+
 #titlebar {
 	width: 100%;
 	text-align: center;
@@ -97,7 +101,7 @@ h3 {
 	font-size: 18px;
 	margin-left: 30px;
 	margin-right: 0px;
-	width: 80%;
+	width: 85%;
 	border: solid;
 	border-radius: 15px;
 	border-color: darkgray;
@@ -188,6 +192,7 @@ h6 {
 	border-color: grey;
 	margin-right: 50px;
 	margin-top: 5px;
+	margin-left: 0;
 }
 
 .media {
@@ -287,5 +292,4 @@ footer {
 	bottom: 0px !important;
 	position: fixed;
 	width: 100%;
-	margin-top: 0;
 }
