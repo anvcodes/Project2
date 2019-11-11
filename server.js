@@ -34,6 +34,9 @@ app.use("/", htmlRoutes);
 var locationRoute = require("./routes/location");
 app.use("/api", locationRoute);
 
+var userRoute = require("./routes/user");
+app.use("/api", userRoute);
+
 var syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true

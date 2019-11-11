@@ -1,16 +1,30 @@
 var express = require("express");
 var router = express.Router();
 // var path = require("path");
+var db = require("./../models/index.js");
 
-module.exports = function(app) {
 
-app.get("/", (req, res) => {
-    console.log("This is the home page for users")
-    res.send("index.handlebars");
-})
+router.get("/user", (req, res) => {
+  db.users.findAll({})
+  .then(function(dbUsers){
+      res.json(dbUsers);
+  });
+});
 
-app.post("/api/user", (req, res) => {
-    db.User.create({
+// router.get("/user/:id", (req, res) => {
+//   db.users.findAll({
+//     where:{
+//       id: req.params.id
+//     }
+//   })
+//   .then(function(dbUsers){
+//       res.json(dbUsers);
+//   });
+// });
+
+
+router.post("/user", (req, res) => {
+    db.users.create({
         name: req.body.name,
         age: req.body.age,
         region: req.body.region
@@ -18,41 +32,46 @@ app.post("/api/user", (req, res) => {
       .then(function(dbUser){
         res.json(dbUser)
       }); 
-    res.send(`a get request with /user route on port ${PORT}`);
 })
 
 
-router.post("/api/user", (req, res) => {
-  db.User.read({
+// router.post("/api/user", (req, res) => {
+//   db.User.read({
 
-  }).then(function(dbUser){
-        res.json(dbUser);
-    });
+//   }).then(function(dbUser){
+//         res.json(dbUser);
+//     });
   
-    res.send(`a post request with /user/post route on port ${PORT}`);
-})
+//     res.send(`a post request with /user/post route on port ${PORT}`);
+// })
 
-router.put("/api/user/put", (req, res) => {
-  db.User.update({
+router.put("/user/:id", (req, res) => {
+  db.users.update({
     name: req.body.name,
         age: req.body.age,
         region: req.body.region
+  },{
+    where:{
+      id: req.params.id
+    }
   }).then(function(dbUser){
     res.json(dbUser)
   }); 
-    res.send(`a put request with /user/put route on port ${PORT}`);
 })
 
-router.delete("/api/user/delete", (req, res) => {
-  db.User.destroy({
+router.delete("/user/:id", (req, res) => {
+  db.users.destroy({
     name: req.body.name,
         age: req.body.age,
         region: req.body.region
-  }).then(function(dbUser){
+  },{
+    where:{
+      id: req.params.id
+    }
+    }).then(function(dbUser){
     res.json(dbUser)
   }); 
-    res.send(`a delete request with /user/delete route on port ${PORT}`);
 })
 
-};
+
  module.exports = router;
