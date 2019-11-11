@@ -31,6 +31,9 @@ app.use("/api", apiRoutes);
 var htmlRoutes = require("./routes/html/htmlRoute");
 app.use("/", htmlRoutes);
 
+var locationRoute = require("./routes/location");
+app.use("/api", locationRoute);
+
 var syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true
