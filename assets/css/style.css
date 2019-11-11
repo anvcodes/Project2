@@ -1,0 +1,238 @@
+.navbar {
+}
+
+#titlebar {
+	width: 100%;
+	text-align: center;
+	margin-top: 0 !important;
+}
+
+h1 {
+	text-align: center;
+	color: aliceblue;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-top: 0px;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: whitesmoke;
+	border: solid;
+	border-width: 1px;
+	border-color: grey;
+}
+
+h3 {
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#location-list {
+	line-height: 1.5;
+	background: aliceblue;
+	margin: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 25px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.location-image-logos {
+	height: 70px;
+}
+
+#matches-list {
+	line-height: 1.5;
+	background: aliceblue;
+	margin: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 18px;
+	margin-left: 30px;
+	margin-right: 0px;
+	padding-bottom: 20px;
+	width: 80%;
+	border: solid;
+	border-color: darkgray;
+	border-width: 1px;
+	display: flex;
+	flex-direction: column;
+}
+
+.match-container {
+	display: flex;
+	flex-direction: row;
+	border: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+.match-image-container {
+	height: 200px;
+}
+
+.matches-thumbnails {
+	height: 180px;
+	padding: 10px;
+	width: 150px;
+}
+
+#match-info-container {
+	padding: 10px !important;
+	background: whitesmoke;
+	border: solid;
+	border-width: 1px;
+	font-size: 10px;
+}
+
+.checkin-status {
+	font-size: 15px;
+}
+
+.convo {
+	font-size: 15px;
+}
+
+.btn {
+}
+.wrapper {
+	float: left;
+}
+
+body {
+	background: lightgray;
+	position: relative;
+	min-height: 100vh;
+}
+
+#floatimage {
+	height: 25%;
+	padding: 20px;
+	width: 25%;
+}
+
+.bio-section-heading {
+	font-size: 25px;
+}
+
+h4 {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
+	padding: 10px;
+}
+
+h5 {
+	text-align: center;
+	background: whitesmoke;
+	border: solid;
+	border-width: 2px;
+	border-color: grey;
+	height: 30px;
+}
+h6 {
+	text-align: center;
+	background: whitesmoke;
+	border: solid;
+	border-width: 2px;
+	border-color: grey;
+	margin-right: 50px;
+	margin-top: 5px;
+}
+
+.media {
+	display: flex;
+	flex-direction: row;
+	margin-right: 45%;
+	margin-left: 0;
+}
+
+#bio-image {
+	height: 60px;
+	width: 60px;
+	border: solid;
+	border-width: 1px;
+	border-color: grey;
+	margin-left: 30px;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+#main-bio {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	background: aliceblue;
+	border: solid;
+	border-color: grey;
+}
+.media-body {
+	font-size: 18px;
+	margin-right: 40px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background: white;
+	border: solid;
+	border-width: 1px;
+	border-color: grey;
+	min-width: 85%;
+}
+
+.body-bio-text {
+	font-size: 15px;
+	margin-left: 40px;
+	margin-right: 40px;
+	min-width: 75%;
+}
+
+#locations-profile {
+	margin-top: 0;
+	margin-left: 50px;
+	height: 5%;
+	margin-bottom: 0;
+}
+
+.location-image-logos-profile {
+	width: 15%;
+}
+
+#login {
+	background: aliceblue;
+	border: solid;
+	border-width: 2px;
+	border-color: white;
+	width: 500px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+
+.btn-group {
+	width: 100% !important;
+	margin-bottom: 0 !important;
+}
+
+img.btn-img {
+	width: 40px;
+}
+
+footer {
+	bottom: 0px !important;
+	position: fixed;
+	width: 100%;
+	margin-top: 0;
+}
