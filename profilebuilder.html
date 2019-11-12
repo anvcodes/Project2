@@ -11,24 +11,13 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="assets/css/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet" />
+
 		<title>Dating App</title>
 	</head>
 	<body>
-		<header>
-			<div class="pos-f-t">
-				<div class="collapse" id="navbarToggleExternalContent">
-					<div class="bg-dark p-4">
-						<h5 class="text-white h4">Collapsed content</h5>
-						<span class="text-muted">Toggleable via the navbar brand.</span>
-					</div>
-				</div>
-				<nav class="navbar ">
-					<div id="titlebar">
-						<h1>Dating App</h1>
-					</div>
-				</nav>
-			</div>
-		</header>
+		<header></header>
 
 		<div id="profile-builder">
 			<h3>Build Your Profile</h3>
@@ -63,10 +52,15 @@
 						rows="5"
 					></textarea>
 				</div>
-
-				<button type="button" onclick="window.location.href = 'locations.html';" class="btn btn-primary">
-					Submit
-				</button>
+				<p>Upload your profile picture:</p>
+				<br />
+				<form action="/action_page.php">
+					<input type="file" name="pic" accept="image/*" />
+					<br /><br />
+					<button type="button" onclick="window.location.href = 'locations.html';" class="btn2 btn-primary">
+						Submit
+					</button>
+				</form>
 			</form>
 		</div>
 		<footer>
