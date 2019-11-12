@@ -1,7 +1,8 @@
 var express = require("express");
 var router = express.Router();
+var db = require("./../models/index");
 
-router.get("/routes/location", (req, res) => {
+router.get("/location", (req, res) => {
     db.Location.findAll({
 
     })
@@ -10,8 +11,8 @@ router.get("/routes/location", (req, res) => {
     });
 })
 
-router.post("/api/location/post", (req, res) => {
-    db.Location.create({
+router.post("/location", (req, res) => {
+    db.locations.create({
         longitude: req.body.longitude,
         latitude: req.body.latitude,
         city: req.body.city,
@@ -21,15 +22,7 @@ router.post("/api/location/post", (req, res) => {
         res.json(dbLocation);
     });
 
-    db.Location.post({
-        longitude: req.body.longitude,
-        latitude: req.body.latitude,
-        city: req.body.city,
-        state: req.body.state,
-        venue: req.body.venue
-    }).then(function(dbLocation){
-        res.json(dbLocation);
-    });
+  
 })
 
 router.put("/api/location/put", (req, res) => {

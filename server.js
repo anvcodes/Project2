@@ -10,6 +10,7 @@ var PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
 app.use(express.static("public"));
 
 // Handlebars
@@ -25,24 +26,23 @@ app.set("view engine", "handlebars");
 // require("./routes/apiRoutes")(app);
 // require("./routes/htmlRoutes")(app);
 
-
-app.get("/", (req, res) => {
-  console.log("This is the home page for users")
-  res.render("index", {
-      name: "name"
-  })
-})
-
 var apiRoutes = require("./routes/apiRoutes");
 app.use("/api", apiRoutes);
 
 var htmlRoutes = require("./routes/html/htmlRoute");
 app.use("/", htmlRoutes);
 
+var locationRoute = require("./routes/location");
+app.use("/api", locationRoute);
+
+var userRoute = require("./routes/user");
+app.use("/api", userRoute);
+
 var syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
+
 if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }

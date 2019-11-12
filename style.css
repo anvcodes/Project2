@@ -81,6 +81,14 @@ body {
 	width: 25%;
 }
 
+#main-bio {
+	margin: 30px;
+}
+
+.media-body {
+	margin-right: 30px;
+}
+
 .bio-section-heading {
 	font-size: 25px;
 }

@@ -1,38 +1,31 @@
 var express = require("express");
 var router = express.Router();
 // var path = require("path");
+var db= require("./../models/index");
+// module.exports = function(app) {
 
-module.exports = function(app) {
-
-app.get("/", (req, res) => {
-    console.log("This is the home page for users")
-    res.send("index.handlebars");
-})
-
-app.post("/api/user", (req, res) => {
-    db.User.create({
-        name: req.body.name,
-        age: req.body.age,
-        region: req.body.region
-      })
-      .then(function(dbUser){
-        res.json(dbUser)
-      }); 
-    res.send(`a get request with /user route on port ${PORT}`);
-})
+router.get("/user", (req, res) => {
+  db.User.findAll({})
+  .then(function(dbUsers){
+      res.json(dbUsers);
+  });
+});
 
 
-router.post("/api/user", (req, res) => {
-  db.User.read({
 
+router.post("/user", (req, res) => {
+  db.user.create({
+    name: req.body.name,
+    age: req.body.age,
+    region: req.body.region
   }).then(function(dbUser){
         res.json(dbUser);
     });
   
-    res.send(`a post request with /user/post route on port ${PORT}`);
+    
 })
 
-router.put("/api/user/put", (req, res) => {
+router.put("/user", (req, res) => {
   db.User.update({
     name: req.body.name,
         age: req.body.age,
@@ -54,5 +47,5 @@ router.delete("/api/user/delete", (req, res) => {
     res.send(`a delete request with /user/delete route on port ${PORT}`);
 })
 
-};
+
  module.exports = router;
