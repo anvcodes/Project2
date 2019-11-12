@@ -7,7 +7,7 @@ var router = express.Router();
 
 
 
-router.get("/", (req, res) => {
+router.get("/",(req, res) => {
     console.log("This is the home page for users")
     res.render("index.handlebars", {})
 })
