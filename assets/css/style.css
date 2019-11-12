@@ -323,3 +323,11 @@ footer {
 	position: fixed;
 	width: 100%;
 }
+
+#logout-link {
+	font-size: 12px;
+	clear: both;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
