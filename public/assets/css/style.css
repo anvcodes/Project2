@@ -1,9 +1,15 @@
 .navbar {
-	height: 60px;
+	height: 80px;
+	background: rgba(72, 72, 82, 0.794);
+	opacity: 1;
+	border: solid;
+	border-width: 1px;
+	border-color: black;
 }
 
 body {
 	overflow: auto;
+	background: white;
 }
 
 #titlebar {
@@ -14,45 +20,34 @@ body {
 
 h1 {
 	text-align: center;
-	color: aliceblue;
+	color: rgb(237, 237, 245);
 	font-weight: bold;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Lobster', cursive;
 	margin-top: 0px;
+	font-size: 50px;
+	text-shadow: 2px 0 slategrey, 0 1px black, 1px 0 black, 0 -2px black;
 }
 
 h2 {
-	font-size: 20px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 28px;
+	font-family: 'Lobster', sans-serif;
 	text-align: center;
 	padding: 5px;
 	padding-bottom: 0;
-	font-style: italic;
-	font-weight: bold;
-	background-color: whitesmoke;
-	border: solid;
-	border-width: 1px;
-	border-color: grey;
-	height: 40px;
 }
 
 .last-checked-in-header {
-	font-size: 15px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 22px;
+	font-family: 'Lobster', sans-serif;
 	text-align: center;
 	padding: 0px;
-	font-style: italic;
-	font-weight: bold;
-	background-color: whitesmoke;
-	border: solid;
-	border-width: 1px;
-	border-color: grey;
 	height: 30px;
 }
 
 h3 {
 	text-align: center;
-	font-size: 20px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 28px;
+	font-family: 'Lobster', sans-serif;
 }
 
 .location-container {
@@ -72,20 +67,29 @@ h3 {
 	border: solid;
 	border-width: 1px;
 	border-color: grey;
+	border-radius: 10px;
 }
 
 #location-list {
-	background: aliceblue;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 18px;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 25px;
 	margin-left: 30px;
-	margin-right: 30px;
+	margin-right: 40px;
 	margin-top: 0px;
-	border: solid;
-	border-radius: 10px;
-	border-width: 1px;
-	border-color: grey;
+	margin-bottom: 5px;
 	overflow: auto;
+	border-radius: 15px;
+	width: 86%;
+}
+
+.location-display-on-list {
+	border-radius: 15px;
+	border: transparent;
+	border-width: 1px;
+	margin-bottom: 5px;
+	background: white;
+	opacity: 0.9;
+	z-index: 1;
 }
 
 .location-image-logos {
@@ -96,20 +100,16 @@ h3 {
 
 #matches-list {
 	line-height: 1.5;
-	background: aliceblue;
 	margin: 20px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 16px;
 	margin-left: 30px;
 	margin-right: 0px;
 	width: 82%;
-	border: solid;
-	border-radius: 15px;
-	border-color: darkgray;
-	border-width: 1px;
 	display: flex;
 	flex-direction: column;
 	overflow: auto;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 20px;
+	text-emphasis: padding;
 }
 
 .match-container {
@@ -119,6 +119,10 @@ h3 {
 	border-bottom: solid;
 	border-width: 1px;
 	border-color: gray;
+	background: whitesmoke;
+	border-radius: 15px;
+
+	padding-top: 4px;
 }
 
 .match-image-container {
@@ -131,12 +135,19 @@ h3 {
 	width: 140px;
 }
 
+img.matches-thumbnails {
+	border-radius: 8px;
+}
+
 #match-info-container {
 	background: whitesmoke;
 	border: solid;
 	border-width: 1px;
 	font-size: 10px;
 	border-radius: 5px;
+	padding: 5px;
+	padding-top: 10px;
+	margin-right: 25px;
 }
 
 .checkin-status {
@@ -147,6 +158,8 @@ h3 {
 .convo {
 	font-size: 12px;
 	margin-bottom: 0;
+	margin-right: 20px;
+	padding-top: 20px;
 }
 
 .wrapper {
@@ -154,9 +167,10 @@ h3 {
 }
 
 body {
-	background: lightgray;
 	position: relative;
 	min-height: 100vh;
+	background: rgb(230, 230, 230);
+	background: linear-gradient(to bottom right, rgba(230, 230, 230, 1) 20%, lavender 40%);
 }
 
 #floatimage {
@@ -219,17 +233,11 @@ h6 {
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 5px;
-	background: aliceblue;
-	border: solid;
-	border-color: grey;
-	border-radius: 4px;
-	border-width: 2px;
 }
 
 .bio-header {
 	font-size: 20px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-		sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	margin-top: 5px;
 	text-align: center;
 }
@@ -244,7 +252,8 @@ h6 {
 	border-radius: 6px;
 	border-width: 1px;
 	border-color: grey;
-	min-width: 85%;
+	width: 85%;
+	height: 500px;
 }
 
 .body-bio-text {
@@ -255,36 +264,22 @@ h6 {
 	margin-bottom: 5px;
 }
 
-#locations-profile {
-	margin-top: 0;
-
-	height: 5%;
-	margin-bottom: 0;
-	margin-left: 20px;
-	margin-right: 20px;
-	overflow: auto;
-	border: solid;
-	border-radius: 6px;
-	background: whitesmoke;
-	border-width: 1px;
-	border-color: gray;
-	padding: 10px;
-}
-
 .location-image-logos-profile {
 	width: 15%;
 }
 
 #login {
-	background: aliceblue;
+	background: whitesmoke;
 	border: solid;
 	border-width: 2px;
 	border-color: white;
 	border-radius: 4px;
 	width: 80%;
+	font-family: 'Playfair Display', sans-serif;
+
 	margin-left: 40px;
 	margin-right: 40px;
-	margin-top: 40px;
+	margin-top: 70px;
 	margin-bottom: 40px;
 	padding: 20px;
 }
@@ -298,13 +293,16 @@ h6 {
 	height: 50px;
 	margin-bottom: 5px;
 	margin-top: 5px;
+	background: white;
+	border-radius: 8px;
 }
 
 .btn1 {
-	height: 30px;
+	height: 40px;
 	margin-bottom: 5px;
 	margin-top: 5px;
-	border-radius: 1px;
+	border-radius: 8px;
+	background: rgb(158, 158, 245);
 }
 
 img.btn-img {
@@ -313,6 +311,11 @@ img.btn-img {
 
 img.btn-img1 {
 	width: 20px;
+}
+
+#profile-builder {
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 footer {
