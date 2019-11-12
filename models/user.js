@@ -13,6 +13,17 @@ module.exports = function(sequelize, DataTypes) {
 
       through: models.Matches
     });
+    User.belongsToMany(models.User, {
+      as: "userLocation",
+
+      through: models.locations,
+
+      foreignKey: {
+        allowNull: true,
+        defaultValue: 2,
+        unique: false
+      }
+    });
   };
   return User;
 };

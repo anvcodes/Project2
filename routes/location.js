@@ -10,7 +10,7 @@ router.get("/location", (req, res) => {
     });
 });
 
-router.post("/location/post", (req, res) => {
+router.post("/location", (req, res) => {
     db.locations.create({
         longitude: req.body.longitude,
         latitude: req.body.latitude,
