@@ -43,7 +43,11 @@ var userRoute = require("./routes/user");
 app.use("/api", userRoute);
 
 
+var matchRoute = require("./routes/match");
+app.use("/api", matchRoute);
+
 var syncOptions = { force: false };
+
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
