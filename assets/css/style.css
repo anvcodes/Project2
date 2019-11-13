@@ -233,14 +233,67 @@ h6 {
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 5px;
+	text-align: center;
 }
 
 .bio-header {
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Playfair Display', sans-serif;
 	margin-top: 5px;
 	text-align: center;
+	display: inline-block;
 }
+
+#user-name {
+	display: inline-block;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Playfair Display', sans-serif;
+	margin-right: 5px;
+}
+#user-age {
+	display: inline-block;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Playfair Display', sans-serif;
+	margin-right: 5px;
+}
+#user-region {
+	display: inline-block;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Playfair Display', sans-serif;
+	margin-right: 5px;
+}
+
+#user-horoscope {
+	display: inline-block;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Playfair Display', sans-serif;
+	margin-right: 5px;
+}
+
+#user-interests-intro {
+	font-family: 'lobster', sans-serif;
+	font-size: 25px;
+}
+
+#user-interests {
+	float: left;
+	margin-left: 20px;
+}
+
+#bio-intro {
+	font-family: 'lobster', sans-serif;
+	font-size: 25px;
+}
+
+#user-bio-text {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 .media-body {
 	font-size: 18px;
 	margin-right: 40px;
@@ -249,10 +302,11 @@ h6 {
 	margin-bottom: 4px;
 	background: white;
 	border: solid;
-	border-radius: 6px;
+	border-radius: 10px;
 	border-width: 1px;
 	border-color: grey;
 	width: 85%;
+	float: left;
 }
 
 .body-bio-text {
