@@ -11,12 +11,18 @@
   },
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "express-handlebars": "^3.1.0",
     "mysql2": "^1.6.5",
     "nodemon": "^1.19.4",
+<<<<<<< HEAD
     "sequelize": "^5.21.2"
+=======
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.5.1"
+>>>>>>> master
   },
   "devDependencies": {
     "chai": "^4.2.0",

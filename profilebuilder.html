@@ -13,52 +13,55 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-		<link rel="stylesheet" href="animate.min.css" />
 
-		<title>dating app</title>
+		<title>Dating App</title>
 	</head>
 	<body>
-		<header>
-			<div class="pos-f-t">
-				<div class="collapse" id="navbarToggleExternalContent"></div>
-				<nav class="navbar">
-					<div id="titlebar">
-						<h1>dating app</h1>
-					</div>
-				</nav>
-			</div>
-		</header>
+		<header></header>
 
-		<div class="animated fadeIn" id="login">
-			<h3>Login</h3>
+		<div id="profile-builder">
+			<h3>Build Your Profile</h3>
 			<form>
 				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
+					<label for="name">Name:</label>
 					<input
-						type="email"
+						type="input"
 						class="form-control"
-						id="exampleInputEmail1"
+						id="user-name"
 						aria-describedby="emailHelp"
-						placeholder="Enter email"
+						placeholder="Enter Your Name"
 					/>
-					<small id="emailHelp" class="form-text text-muted"
-						>We'll never share your email with anyone else.</small
-					>
 				</div>
 				<div class="form-group">
-					<label for="exampleInputPassword1">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+					<label for="age">Age:</label>
+					<input type="input" class="form-control" id="user-age" placeholder="Enter Your Age" />
 				</div>
-				<div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1" />
-					<label class="form-check-label" for="exampleCheck1">Remember Me</label>
+
+				<div class="form-group">
+					<label for="region">Region:</label>
+					<input type="input" class="form-control" id="user-region" placeholder="Enter Your Region" />
 				</div>
-				<button type="button" onclick="window.location.href = 'locations.html';" class="btn2 btn-primary">
-					Sign In
-				</button>
+
+				<div class="form-group">
+					<label for="bio">Bio:</label>
+					<textarea
+						type="text-box"
+						class="form-control"
+						id="user-bio"
+						placeholder="Write a brief bio about yourself"
+						rows="5"
+					></textarea>
+				</div>
+				<p>Upload your profile picture:</p>
+				<br />
+				<form action="/action_page.php">
+					<input type="file" name="pic" accept="image/*" />
+					<br /><br />
+					<button type="button" onclick="window.location.href = 'locations.html';" class="btn2 btn-primary">
+						Submit
+					</button>
+				</form>
 			</form>
-			<p>Don't have an account? <a href="profilebuilder.html"> Sign up!</a></p>
 		</div>
 		<footer>
 			<div class="btn-group" role="group" aria-label="Basic example">
@@ -73,6 +76,9 @@
 				</button>
 				<button type="button" onclick="window.location.href = 'profile.html';" class="btn btn-secondary">
 					<img class="btn-img" src="assets/images/user.png" />
+				</button>
+				<button type="button" onclick="window.location.href = 'profile.html';" class="btn btn-secondary">
+					<img class="btn-img" src="assets/images/settings.png" />
 				</button>
 			</div>
 		</footer>

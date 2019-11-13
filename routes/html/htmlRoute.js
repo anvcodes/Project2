@@ -5,7 +5,7 @@ var path = require("path");
 
 
 
-router.get("/", (req, res) => {
+router.get("/",(req, res) => {
     console.log("This is the home page for users")
     res.render("index", {
         name: "name"
@@ -35,6 +35,11 @@ router.get("/messages", (req, res) => {
 router.get("/profileBuild", (req, res) => {
     console.log("This is the profile page for users")
     res.render("profileBuild", {})
+})
+
+router.get("/profileBuilder", (req, res) => {
+    console.log("This is the profile page for users")
+    res.render("profileBuilder.handlebars", {})
 })
 
 

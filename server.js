@@ -38,6 +38,15 @@ app.use("/api", locationRoute);
 var userRoute = require("./routes/user");
 app.use("/api", userRoute);
 
+<<<<<<< HEAD
+=======
+var matchRoute = require("./routes/match");
+app.use("/api", matchRoute);
+
+var profileBuilder = require("./routes/profileBuilder");
+app.use("/api", profileBuilder);
+
+>>>>>>> master
 var syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true

@@ -1,4 +1,15 @@
 .navbar {
+	height: 80px;
+	background: rgba(72, 72, 82, 0.794);
+	opacity: 1;
+	border: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+body {
+	overflow: auto;
+	background: white;
 }
 
 #titlebar {
@@ -9,96 +20,157 @@
 
 h1 {
 	text-align: center;
-	color: aliceblue;
+	color: rgb(237, 237, 245);
 	font-weight: bold;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Lobster', cursive;
 	margin-top: 0px;
+	font-size: 50px;
+	text-shadow: 2px 0 slategrey, 0 1px black, 1px 0 black, 0 -2px black;
 }
 
 h2 {
-	font-size: 30px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 28px;
+	font-family: 'Lobster', sans-serif;
 	text-align: center;
-	padding: 10px;
-	font-style: italic;
+	padding: 5px;
+	padding-bottom: 0;
+}
+
+.last-checked-in-header {
+	font-size: 22px;
+	font-family: 'Lobster', sans-serif;
+	text-align: center;
+	padding: 0px;
+	height: 30px;
 }
 
 h3 {
 	text-align: center;
-	font-size: 35px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 28px;
+	font-family: 'Lobster', sans-serif;
+}
+
+.location-container {
+	font-size: 22px;
+	padding-left: 30px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-bottom: 0px;
+	background: aliceblue;
+	width: 100%;
+}
+
+#g-map-example {
+	width: 90%;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	border: solid;
+	border-width: 1px;
+	border-color: grey;
+	border-radius: 10px;
 }
 
 #location-list {
-	line-height: 1.5;
-	background: aliceblue;
-	margin: 20px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	font-size: 25px;
 	margin-left: 30px;
-	margin-right: 30px;
+	margin-right: 40px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	overflow: auto;
+	border-radius: 15px;
+	width: 86%;
+}
+
+.location-display-on-list {
+	border-radius: 15px;
+	border: transparent;
+	border-width: 1px;
+	margin-bottom: 5px;
+	background: white;
+	opacity: 0.9;
+	z-index: 1;
 }
 
 .location-image-logos {
 	height: 70px;
+	padding: 10px;
+	padding-bottom: 0px;
 }
 
 #matches-list {
 	line-height: 1.5;
-	background: aliceblue;
 	margin: 20px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 30px;
-	margin-left: 50px;
-	margin-right: 50px;
-	width: 80%;
-	border: solid;
-	border-color: darkgray;
-	border-width: 2px;
+	margin-left: 30px;
+	margin-right: 0px;
+	width: 82%;
 	display: flex;
 	flex-direction: column;
+	overflow: auto;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 20px;
+	text-emphasis: padding;
 }
 
 .match-container {
 	display: flex;
 	flex-direction: row;
-	border: solid;
+	margin-bottom: 30px;
+	border-bottom: solid;
 	border-width: 1px;
-	border-color: black;
+	border-color: gray;
+	background: whitesmoke;
+	border-radius: 15px;
+
+	padding-top: 4px;
 }
 
 .match-image-container {
-	height: 200px;
+	height: 150px;
 }
 
 .matches-thumbnails {
-	height: 200px;
+	height: 150px;
 	padding: 10px;
+	width: 140px;
+}
+
+img.matches-thumbnails {
+	border-radius: 8px;
 }
 
 #match-info-container {
-	padding: 10px !important;
 	background: whitesmoke;
 	border: solid;
 	border-width: 1px;
-	color: green;
+	font-size: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	padding-top: 10px;
+	margin-right: 25px;
 }
 
 .checkin-status {
-	font-size: 20px;
+	font-size: 12px;
+	padding: 5px;
 }
 
 .convo {
-	font-size: 15px;
+	font-size: 12px;
+	margin-bottom: 0;
+	margin-right: 20px;
+	padding-top: 20px;
 }
+
 .wrapper {
 	float: left;
 }
 
 body {
-	background: lightgray;
 	position: relative;
 	min-height: 100vh;
+	background: rgb(230, 230, 230);
+	background: linear-gradient(to bottom right, rgba(230, 230, 230, 1) 20%, lavender 40%);
 }
 
 #floatimage {
@@ -111,21 +183,103 @@ body {
 	font-size: 25px;
 }
 
-.bio-text {
+h4 {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
+	padding: 10px;
+}
+
+h5 {
+	text-align: center;
+	background: whitesmoke;
+	border: solid;
+	border-width: 2px;
+	border-color: grey;
+	height: 30px;
+}
+h6 {
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 0;
+}
+
+.media {
+	display: flex;
+	flex-direction: row;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+#bio-image {
+	width: 85%;
+	border: solid;
+	border-radius: 8px;
+	border-width: 1px;
+	border-color: grey;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+#main-bio {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+.bio-header {
+	font-size: 20px;
+	font-family: 'Playfair Display', sans-serif;
+	margin-top: 5px;
+	text-align: center;
+}
+.media-body {
+	font-size: 18px;
+	margin-right: 40px;
+	margin-top: 7px;
+	margin-left: 20px;
+	margin-bottom: 4px;
+	background: white;
+	border: solid;
+	border-radius: 6px;
+	border-width: 1px;
+	border-color: grey;
+	width: 85%;
+	height: 500px;
+}
+
+.body-bio-text {
 	font-size: 15px;
 	margin-left: 40px;
 	margin-right: 40px;
+	min-width: 75%;
+	margin-bottom: 5px;
+}
+
+.location-image-logos-profile {
+	width: 15%;
 }
 
 #login {
-	background: aliceblue;
+	background: whitesmoke;
 	border: solid;
 	border-width: 2px;
 	border-color: white;
-	width: 500px;
+	border-radius: 4px;
+	width: 80%;
+	font-family: 'Playfair Display', sans-serif;
+
 	margin-left: 40px;
 	margin-right: 40px;
-	margin-top: 40px;
+	margin-top: 70px;
 	margin-bottom: 40px;
 	padding: 20px;
 }
@@ -135,13 +289,37 @@ body {
 	margin-bottom: 0 !important;
 }
 
+.btn {
+	height: 50px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background: white;
+	border-radius: 8px;
+}
+
+.btn1 {
+	height: 40px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-radius: 8px;
+	background: rgb(158, 158, 245);
+}
+
 img.btn-img {
-	width: 40px;
+	width: 30px;
+}
+
+img.btn-img1 {
+	width: 20px;
+}
+
+#profile-builder {
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 footer {
 	bottom: 0px !important;
 	position: fixed;
 	width: 100%;
-	float: inline-block;
 }
