@@ -7,7 +7,7 @@ var router = express.Router();
 
 
 
-router.get("/", (req, res) => {
+router.get("/",(req, res) => {
     console.log("This is the home page for users")
     res.render("index.handlebars", {})
 })
@@ -30,6 +30,11 @@ router.get("/matches", (req, res) => {
 router.get("/messages", (req, res) => {
     console.log("This is the profile page for users")
     res.render("messages.handlebars", {})
+})
+
+router.get("/profileBuilder", (req, res) => {
+    console.log("This is the profile page for users")
+    res.render("profileBuilder.handlebars", {})
 })
 
 

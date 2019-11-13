@@ -1,5 +1,3 @@
-
-
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
@@ -24,11 +22,9 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-
 // Routes
 // require("./routes/apiRoutes")(app);
 // require("./routes/htmlRoutes")(app);
-
 
 var apiRoutes = require("./routes/apiRoutes");
 app.use("/api", apiRoutes);
@@ -42,6 +38,11 @@ app.use("/api", locationRoute);
 var userRoute = require("./routes/user");
 app.use("/api", userRoute);
 
+var matchRoute = require("./routes/match");
+app.use("/api", matchRoute);
+
+var profileBuilder = require("./routes/profileBuilder");
+app.use("/api", profileBuilder);
 
 var syncOptions = { force: false };
 
@@ -54,7 +55,6 @@ if (process.env.NODE_ENV === "test") {
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
-
   app.listen(PORT, function() {
     console.log(
       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
