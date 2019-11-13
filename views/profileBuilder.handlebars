@@ -44,3 +44,19 @@
             </button>
         </form>
     </div>
+    <script>
+
+        $("<button>").on("click", function(event){
+            event.preventDefault();
+            res.render("profile", {});
+        var name = $("#user-name").val();
+        var age = $("#user-age").val();
+        var region = $("#user-region").val();
+        var bio= $("#user-bio").val();
+            
+        });
+
+
+      
+    </script>
+</body>
