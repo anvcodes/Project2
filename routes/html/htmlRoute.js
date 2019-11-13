@@ -32,6 +32,11 @@ router.get("/messages", (req, res) => {
     res.render("messages.handlebars", {})
 })
 
+router.get("/profileBuilder", (req, res) => {
+    console.log("This is the profile page for users")
+    res.render("profileBuilder.handlebars", {})
+})
+
 
 
 
