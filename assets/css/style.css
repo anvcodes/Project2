@@ -253,7 +253,6 @@ h6 {
 	border-width: 1px;
 	border-color: grey;
 	width: 85%;
-	height: 500px;
 }
 
 .body-bio-text {
@@ -279,7 +278,7 @@ h6 {
 
 	margin-left: 40px;
 	margin-right: 40px;
-	margin-top: 70px;
+	margin-top: 50px;
 	margin-bottom: 40px;
 	padding: 20px;
 }
@@ -316,10 +315,19 @@ img.btn-img1 {
 #profile-builder {
 	margin-left: 20px;
 	margin-right: 20px;
+	font-family: 'Playfair Display', sans-serif;
 }
 
 footer {
 	bottom: 0px !important;
 	position: fixed;
 	width: 100%;
+}
+
+#logout-link {
+	font-size: 12px;
+	clear: both;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
